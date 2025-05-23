@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Marimba Chapina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0ece3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #890000;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #d4aa00;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .galeria img {
+            width: 250px;
+            border-radius: 8px;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 560px;
+            height: 315px;
+        }
+        form {
+            max-width: 500px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background-color: #890000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            background-color: #890000;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Marimba Chapina</h1>
+    <p>Promoviendo la música de marimba guatemalteca por el mundo</p>
+</header>
+
+<nav>
+    <a href="https://es.wikipedia.org/wiki/Marimba" target="_blank">¿Qué es la marimba?</a>
+    <a href="https://www.visitguatemala.com/" target="_blank">Visita Guatemala</a>
+</nav>
+
+<section>
+    <h2>Galería de Marimbas</h2>
+    <div class="galeria">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Marimba_Chiapaneca.jpg/800px-Marimba_Chiapaneca.jpg" alt="Marimba Tradicional">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Marimba_concierto.jpg/800px-Marimba_concierto.jpg" alt="Concierto de marimba">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Marimba_band.jpg/800px-Marimba_band.jpg" alt="Grupo tocando marimba">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Marimba_musicians.jpg/800px-Marimba_musicians.jpg" alt="Músicos marimbistas">
+    </div>
+</section>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zVh_Rh31QVU?si=fxpQdNeFdUA9OZ0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<section>
+    <h2>Formulario de Contacto</h2>
+    <form action="#" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="pasatiempos">Pasatiempos:</label>
+        <textarea id="pasatiempos" name="pasatiempos" rows="4"></textarea>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <button type="submit">Enviar información</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Marimba Chapina - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
